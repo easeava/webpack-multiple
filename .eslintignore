@@ -1,0 +1,12 @@
+/build/
+
+dist
+node_modules
+
+package.json
+package-lock.json
+
+.prettierignore
+.prettierrc.js
+.eslintrc.js
+.eslintignore

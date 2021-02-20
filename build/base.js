@@ -3,7 +3,7 @@
 const utils = require('./utils')
 const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const { default: ESLintWebpackPlugin } = require('eslint-webpack-plugin')
+const ESLintWebpackPlugin = require('eslint-webpack-plugin')
 const config = require('../config')
 const { entries, plugins } = utils.generateEntriesAndPlugins()
 

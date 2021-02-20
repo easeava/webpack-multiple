@@ -56,7 +56,6 @@ const webpackConfig = merge(baseWebpackConfig, {
       new TerserPlugin({
         terserOptions: {
           ecma: undefined,
-          warnings: false,
           parse: {},
           compress: {
             drop_console: true,
@@ -78,7 +77,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     }),
 
     new MiniCssExtractPlugin({
-      filename: utils.assetsPath('css/[name].[hash:7].css'),
+      filename: utils.assetsPath('css/[name].[fullhash:7].css'),
     }),
 
     new ScriptExtHtmlWebpackPlugin({

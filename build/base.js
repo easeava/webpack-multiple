@@ -3,6 +3,7 @@
 const utils = require('./utils')
 const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const { default: ESLintWebpackPlugin } = require('eslint-webpack-plugin')
 const config = require('../config')
 const { entries, plugins } = utils.generateEntriesAndPlugins()
 
@@ -45,9 +46,6 @@ module.exports = {
         use: [
           {
             loader: 'babel-loader'
-          },
-          {
-            loader: 'eslint-loader',
           },
         ]
       },
@@ -109,6 +107,8 @@ module.exports = {
 
   plugins: [
     ...plugins,
+
+    new ESLintWebpackPlugin(),
 
     new webpack.ProvidePlugin({})
   ]

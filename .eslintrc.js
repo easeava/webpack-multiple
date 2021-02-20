@@ -3,7 +3,7 @@ module.exports = {
   extends: [
     'prettier-standard',
   ],
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
     sourceType: 'module',
     ecmaVersion: 6

@@ -5,7 +5,6 @@ module.exports = {
   dev: {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
 
     devServer: {
       hot: true,
@@ -25,17 +24,12 @@ module.exports = {
       noInfo: false
     },
 
-    useEslint: true,
-    showEslintErrorsInOverlay: false,
-
     devtool: 'eval-cheap-module-source-map',
 
     cssSourceMap: true
   },
 
   build: {
-    index: path.resolve(__dirname, '../dist/index.html'),
-
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',

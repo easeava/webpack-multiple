@@ -110,6 +110,8 @@ module.exports = {
 
     new ESLintWebpackPlugin(),
 
-    new webpack.ProvidePlugin({})
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+    })
   ]
 }

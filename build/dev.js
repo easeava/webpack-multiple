@@ -32,7 +32,7 @@ module.exports = merge(baseWebpackConfig, {
           from: utils.resolve('static'),
           to: config.build.assetsSubDirectory,
           globOptions: {
-            ignore: ['.*']
+            // ignore: ['**/.*']
           }
         }
       ],

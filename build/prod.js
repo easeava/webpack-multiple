@@ -93,7 +93,9 @@ const webpackConfig = merge(baseWebpackConfig, {
           from: utils.resolve('static'),
           to: config.build.assetsSubDirectory,
           globOptions: {
-            ignore: ['.*']
+            // dot: true,
+            // gitignore: true,
+            // ignore: ['**/.*']
           }
         }
       ],

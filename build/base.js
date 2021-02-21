@@ -19,6 +19,11 @@ module.exports = {
   },
 
   resolve: {
+    roots: [
+      utils.resolve('src'),
+      utils.resolve('static')
+    ],
+
     modules: [
       utils.resolve('node_modules'),
       utils.resolve('src')
@@ -58,21 +63,22 @@ module.exports = {
           'postcss-loader',
         ]
       },
+      // {
+      //   test: /\.ejs$/,
+      //   use: {
+      //     loader: 'ejs-loader',
+      //     options: {
+      //       esModule: false,
+      //     }
+      //   }
+      // },
       {
-        test: /\.ejs$/,
-        use: {
-          loader: 'ejs-loader',
-          options: {
-            esModule: false,
-          }
-        }
-      },
-      {
-        test: /\.html$/,
+        test: /\.html$/i,
         use: {
           loader: 'html-loader',
           options: {
             minimize: false,
+            esModule: false,
           }
         }
       },

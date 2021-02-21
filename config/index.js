@@ -24,9 +24,9 @@ module.exports = {
       noInfo: false
     },
 
-    devtool: 'eval-cheap-module-source-map',
+    devtool: 'source-map'
 
-    cssSourceMap: true
+    // cssSourceMap: true
   },
 
   build: {

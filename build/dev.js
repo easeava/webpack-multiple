@@ -14,6 +14,8 @@ module.exports = merge(baseWebpackConfig, {
 
   target: 'web',
 
+  devtool: config.dev.devtool,
+
   devServer: config.dev.devServer,
 
   plugins: [

@@ -8,7 +8,7 @@ const TerserPlugin = require('terser-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
-const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
+// const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
 const baseWebpackConfig = require('./base')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
@@ -80,9 +80,9 @@ const webpackConfig = merge(baseWebpackConfig, {
       filename: utils.assetsPath('css/[name].[fullhash:7].css'),
     }),
 
-    new ScriptExtHtmlWebpackPlugin({
-      inline: /manifest\..*\.js$/,
-    }),
+    // new ScriptExtHtmlWebpackPlugin({
+    //   inline: /manifest\..*\.js$/,
+    // }),
 
     new webpack.ids.HashedModuleIdsPlugin(),
     new webpack.optimize.ModuleConcatenationPlugin(),
